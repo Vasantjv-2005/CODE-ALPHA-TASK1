@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="gallery-header">
+            <h1>Nature & Life Gallery</h1>
+            <p>Discover the beauty of nature and everyday moments</p>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="industrial">Industrial</button>
+            <button class="filter-btn" data-filter="flowers">Flowers</button>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <!-- Image 1: Toad -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-d2Kb18Ss0FXLAiIlfPWIr8WpikE3QU.png" alt="Toad in natural habitat">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Wildlife Wonder</h3>
+                            <p>A toad in its natural environment</p>
+                            <a href="#lightbox-1" class="view-btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 2: Cracked Earth -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t80pb3EwJizC6jjmOCVVpcA0WMNgo0.png" alt="Cracked dried earth texture">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Earth's Canvas</h3>
+                            <p>Natural patterns in dried earth</p>
+                            <a href="#lightbox-2" class="view-btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 3: Warehouse -->
+            <div class="gallery-item" data-category="industrial">
+                <div class="image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NUEJEIEOh4dZg1cDknQuDSikPtQIX7.png" alt="Warehouse interior with stacked boxes">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Industrial Order</h3>
+                            <p>Organized warehouse storage</p>
+                            <a href="#lightbox-3" class="view-btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4: Sunset -->
+            <div class="gallery-item" data-category="landscape">
+                <div class="image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RhZ1TGx7T0Lni9m8NA9fCGfHuxgUpV.png" alt="Beautiful sunset over water and mountains">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Golden Hour</h3>
+                            <p>Serene sunset over the water</p>
+                            <a href="#lightbox-4" class="view-btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 5: Purple Flowers -->
+            <div class="gallery-item" data-category="flowers">
+                <div class="image-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IK2vNC2yjeRNIkYw1ZILYdabHxjFuX.png" alt="Beautiful purple flowers in bloom">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Spring Blossoms</h3>
+                            <p>Delicate purple flowers</p>
+                            <a href="#lightbox-5" class="view-btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modals -->
+        <div id="lightbox-1" class="lightbox">
+            <div class="lightbox-content">
+                <a href="#" class="close">&times;</a>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-d2Kb18Ss0FXLAiIlfPWIr8WpikE3QU.png" alt="Toad in natural habitat">
+                <div class="lightbox-info">
+                    <h3>Wildlife Wonder</h3>
+                    <p>A beautiful toad captured in its natural habitat, showcasing the intricate details of nature's creatures.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox-2" class="lightbox">
+            <div class="lightbox-content">
+                <a href="#" class="close">&times;</a>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-t80pb3EwJizC6jjmOCVVpcA0WMNgo0.png" alt="Cracked dried earth texture">
+                <div class="lightbox-info">
+                    <h3>Earth's Canvas</h3>
+                    <p>The natural artistry of cracked earth, revealing patterns created by time and weather.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox-3" class="lightbox">
+            <div class="lightbox-content">
+                <a href="#" class="close">&times;</a>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NUEJEIEOh4dZg1cDknQuDSikPtQIX7.png" alt="Warehouse interior with stacked boxes">
+                <div class="lightbox-info">
+                    <h3>Industrial Order</h3>
+                    <p>The organized beauty of industrial spaces, where function meets form in perfect harmony.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox-4" class="lightbox">
+            <div class="lightbox-content">
+                <a href="#" class="close">&times;</a>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RhZ1TGx7T0Lni9m8NA9fCGfHuxgUpV.png" alt="Beautiful sunset over water and mountains">
+                <div class="lightbox-info">
+                    <h3>Golden Hour</h3>
+                    <p>A breathtaking sunset painting the sky in warm hues over tranquil waters and distant mountains.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="lightbox-5" class="lightbox">
+            <div class="lightbox-content">
+                <a href="#" class="close">&times;</a>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IK2vNC2yjeRNIkYw1ZILYdabHxjFuX.png" alt="Beautiful purple flowers in bloom">
+                <div class="lightbox-info">
+                    <h3>Spring Blossoms</h3>
+                    <p>Delicate purple flowers captured in soft focus, celebrating the gentle beauty of spring blooms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
