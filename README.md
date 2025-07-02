@@ -29,6 +29,3 @@ Browser Support
 # Works in all modern browsers including:
 
 Chrome
-Firefox
-Safari
-Edge
